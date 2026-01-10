@@ -38,6 +38,7 @@ const DashboardLayout = ({ children }) => {
         { href: '/designer/submissions', label: 'My Submissions', icon: Trophy },
         { href: '/designer/proposals', label: 'My Proposals', icon: Send },
         { href: '/designer/profile', label: 'Profile', icon: User },
+        { href: '/notifications', label: 'Notifications', icon: Bell },
       ];
     } else if (user?.role === 'client') {
       return [
@@ -45,6 +46,7 @@ const DashboardLayout = ({ children }) => {
         { href: '/client/projects', label: 'My Projects', icon: Briefcase },
         { href: '/client/competitions', label: 'My Competitions', icon: Trophy },
         { href: '/client/profile', label: 'Profile', icon: User },
+        { href: '/notifications', label: 'Notifications', icon: Bell },
       ];
     } else if (user?.role === 'superadmin') {
       return [
