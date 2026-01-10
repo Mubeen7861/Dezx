@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
 
 class DEZXAPITester:
-    def __init__(self, base_url: str = "https://talent-hub-263.preview.emergentagent.com"):
+    def __init__(self, base_url: str = "https://creative-hub-385.preview.emergentagent.com"):
         self.base_url = base_url
         self.session = requests.Session()
         self.tokens = {}  # Store tokens for different user types
