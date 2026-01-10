@@ -115,7 +115,7 @@ const RegisterPage = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="input pl-12"
+                  className="input input-icon-left"
                   placeholder="John Doe"
                   data-testid="register-name"
                 />
@@ -130,7 +130,7 @@ const RegisterPage = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="input pl-12"
+                  className="input input-icon-left"
                   placeholder="you@example.com"
                   data-testid="register-email"
                 />
@@ -145,7 +145,7 @@ const RegisterPage = () => {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="input pl-12 pr-12"
+                  className="input input-icon-both"
                   placeholder="Min. 6 characters"
                   data-testid="register-password"
                 />
