@@ -95,7 +95,7 @@ const ResetPasswordPage = () => {
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="input pl-12 pr-12"
+                    className="input input-icon-both"
                     placeholder="Min. 6 characters"
                     data-testid="reset-password"
                   />
@@ -117,7 +117,7 @@ const ResetPasswordPage = () => {
                     type={showPassword ? 'text' : 'password'}
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="input pl-12"
+                    className="input input-icon-left"
                     placeholder="Confirm your password"
                     data-testid="reset-confirm-password"
                   />
