@@ -74,7 +74,7 @@ const AdminUsers = () => {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search users..."
-              className="input pl-12"
+              className="input input-icon-left"
             />
           </div>
           <select

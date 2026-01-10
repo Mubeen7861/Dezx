@@ -87,7 +87,7 @@ const CompetitionsPage = () => {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search competitions..."
-                className="input pl-12"
+                className="input input-icon-left"
                 data-testid="search-competitions"
               />
             </div>

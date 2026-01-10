@@ -174,7 +174,7 @@ const FreelancePage = () => {
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   placeholder="Search projects by title, description, or skills..."
-                  className="input pl-12 w-full"
+                  className="input input-icon-left w-full"
                   data-testid="search-projects"
                 />
                 {search && (

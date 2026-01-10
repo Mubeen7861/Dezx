@@ -64,7 +64,7 @@ const ForgotPasswordPage = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="input pl-12"
+                    className="input input-icon-left"
                     placeholder="you@example.com"
                     data-testid="forgot-email"
                   />
