@@ -53,6 +53,9 @@ const DashboardLayout = ({ children }) => {
         { href: '/super-admin/content', label: 'Site Content', icon: Edit },
         { href: '/super-admin/projects', label: 'All Projects', icon: Briefcase },
         { href: '/super-admin/competitions', label: 'All Competitions', icon: Trophy },
+        { href: '/super-admin/settings', label: 'Settings', icon: Settings },
+        { href: '/super-admin/audit', label: 'Audit Logs', icon: ScrollText },
+        { href: '/notifications', label: 'Notifications', icon: Bell },
       ];
     }
     return [];
