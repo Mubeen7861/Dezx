@@ -48,7 +48,7 @@ export const authAPI = {
 
 // Users API
 export const usersAPI = {
-  list: () => api.get('/users'),
+  list: () => api.get('/users/'),
   get: (id) => api.get(`/users/${id}`),
   update: (id, data) => api.put(`/users/${id}`, data),
   block: (id) => api.put(`/users/${id}/block`),
@@ -57,27 +57,27 @@ export const usersAPI = {
 
 // Site Content API
 export const contentAPI = {
-  get: () => api.get('/content'),
-  update: (data) => api.put('/content', data),
+  get: () => api.get('/content/'),
+  update: (data) => api.put('/content/', data),
   init: () => api.post('/content/init'),
 };
 
 // Projects API
 export const projectsAPI = {
-  list: (params) => api.get('/projects', { params }),
+  list: (params) => api.get('/projects/', { params }),
   my: () => api.get('/projects/my'),
   get: (id) => api.get(`/projects/${id}`),
-  create: (data) => api.post('/projects', data),
+  create: (data) => api.post('/projects/', data),
   update: (id, data) => api.put(`/projects/${id}`, data),
   delete: (id) => api.delete(`/projects/${id}`),
 };
 
 // Competitions API
 export const competitionsAPI = {
-  list: (params) => api.get('/competitions', { params }),
+  list: (params) => api.get('/competitions/', { params }),
   my: () => api.get('/competitions/my'),
   get: (id) => api.get(`/competitions/${id}`),
-  create: (data) => api.post('/competitions', data),
+  create: (data) => api.post('/competitions/', data),
   update: (id, data) => api.put(`/competitions/${id}`, data),
   delete: (id) => api.delete(`/competitions/${id}`),
 };
@@ -86,7 +86,7 @@ export const competitionsAPI = {
 export const proposalsAPI = {
   forProject: (projectId) => api.get(`/proposals/project/${projectId}`),
   my: () => api.get('/proposals/my'),
-  create: (data) => api.post('/proposals', data),
+  create: (data) => api.post('/proposals/', data),
   approve: (id) => api.put(`/proposals/${id}/approve`),
   reject: (id) => api.put(`/proposals/${id}/reject`),
 };
@@ -95,14 +95,14 @@ export const proposalsAPI = {
 export const submissionsAPI = {
   forCompetition: (competitionId) => api.get(`/submissions/competition/${competitionId}`),
   my: () => api.get('/submissions/my'),
-  create: (data) => api.post('/submissions', data),
+  create: (data) => api.post('/submissions/', data),
   update: (id, data) => api.put(`/submissions/${id}`, data),
   setWinner: (id, position) => api.put(`/submissions/${id}/winner`, null, { params: { position } }),
 };
 
 // Notifications API
 export const notificationsAPI = {
-  list: () => api.get('/notifications'),
+  list: () => api.get('/notifications/'),
   markRead: (id) => api.put(`/notifications/${id}/read`),
   markAllRead: () => api.put('/notifications/read-all'),
 };
@@ -113,11 +113,11 @@ export const uploadAPI = {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('folder', folder);
-    return api.post('/upload', formData, {
+    return api.post('/upload/', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
   },
-  delete: (filePath) => api.delete('/upload', { params: { file_path: filePath } }),
+  delete: (filePath) => api.delete('/upload/', { params: { file_path: filePath } }),
 };
 
 // Admin API
