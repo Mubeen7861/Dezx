@@ -732,7 +732,7 @@ export const ProjectDetail = () => {
                 Approve Proposal
               </DialogTitle>
               <DialogDescription className="pt-2">
-                You're about to approve <span className="font-semibold text-slate-900">{selectedProposal?.designer_name}</span>'s proposal.
+                You&apos;re about to approve <span className="font-semibold text-slate-900">{selectedProposal?.designer_name}&apos;s</span> proposal.
               </DialogDescription>
             </DialogHeader>
             
