@@ -33,6 +33,11 @@ import AdminUsers from './pages/admin/Users';
 import AdminContent from './pages/admin/Content';
 import AdminProjects from './pages/admin/Projects';
 import AdminCompetitions from './pages/admin/Competitions';
+import AdminSettings from './pages/admin/Settings';
+import AdminAudit from './pages/admin/Audit';
+
+// Notifications
+import NotificationsPage from './pages/NotificationsPage';
 
 // Protected Route Component
 const ProtectedRoute = ({ children, allowedRoles }) => {
