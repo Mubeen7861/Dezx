@@ -779,7 +779,7 @@ export const ProjectDetail = () => {
                 Reject Proposal
               </DialogTitle>
               <DialogDescription className="pt-2">
-                Are you sure you want to reject <span className="font-semibold text-slate-900">{selectedProposal?.designer_name}</span>'s proposal?
+                Are you sure you want to reject <span className="font-semibold text-slate-900">{selectedProposal?.designer_name}&apos;s</span> proposal?
               </DialogDescription>
             </DialogHeader>
             
