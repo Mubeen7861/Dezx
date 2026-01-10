@@ -17,6 +17,7 @@ import {
   BarChart3,
   Menu,
   X,
+  ScrollText,
 } from 'lucide-react';
 
 const DashboardLayout = ({ children }) => {

@@ -207,6 +207,23 @@ function AppRoutes() {
           <AdminCompetitions />
         </ProtectedRoute>
       } />
+      <Route path="/super-admin/settings" element={
+        <ProtectedRoute allowedRoles={['superadmin']}>
+          <AdminSettings />
+        </ProtectedRoute>
+      } />
+      <Route path="/super-admin/audit" element={
+        <ProtectedRoute allowedRoles={['superadmin']}>
+          <AdminAudit />
+        </ProtectedRoute>
+      } />
+
+      {/* Notifications (all authenticated users) */}
+      <Route path="/notifications" element={
+        <ProtectedRoute allowedRoles={['designer', 'client', 'superadmin']}>
+          <NotificationsPage />
+        </ProtectedRoute>
+      } />
 
       {/* Catch all - redirect to home */}
       <Route path="*" element={<Navigate to="/" replace />} />
