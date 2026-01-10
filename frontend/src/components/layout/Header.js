@@ -78,6 +78,7 @@ const Header = () => {
             <div className="hidden md:flex items-center gap-3">
               {isAuthenticated ? (
                 <>
+                  <NotificationBell />
                   <Link
                     to={getDashboardPath()}
                     className="btn-ghost text-sm"
