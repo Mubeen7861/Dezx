@@ -138,32 +138,6 @@ const FreelancePage = () => {
     setSortBy('newest');
   };
 
-  // Skeleton loading card
-  const SkeletonCard = () => (
-    <div className="card p-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="skeleton h-6 w-16 rounded-full" />
-        <div className="skeleton h-4 w-24" />
-      </div>
-      <div className="skeleton h-6 w-3/4 mb-3" />
-      <div className="skeleton h-4 w-full mb-2" />
-      <div className="skeleton h-4 w-2/3 mb-4" />
-      <div className="flex gap-2 mb-4">
-        <div className="skeleton h-7 w-20 rounded-full" />
-        <div className="skeleton h-7 w-24 rounded-full" />
-      </div>
-      <div className="flex items-center gap-4 mb-4">
-        <div className="skeleton h-4 w-24" />
-        <div className="skeleton h-4 w-20" />
-      </div>
-      <div className="skeleton h-px w-full mb-4" />
-      <div className="flex items-center justify-between">
-        <div className="skeleton h-4 w-32" />
-        <div className="skeleton h-4 w-24" />
-      </div>
-    </div>
-  );
-
   return (
     <div className="min-h-screen bg-[#FAFAFA]" data-testid="freelance-page">
       <Header />
