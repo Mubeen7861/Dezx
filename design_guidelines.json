@@ -1,0 +1,172 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "DEZX",
+      "aesthetic": "Premium Light & Violet",
+      "core_values": ["Creativity", "Clarity", "Premium", "Community"],
+      "persona": "E1 - The Anti-AI Designer"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "Plus Jakarta Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "black": 900
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+        "h2": "text-4xl md:text-5xl font-bold tracking-tight leading-tight",
+        "h3": "text-2xl md:text-3xl font-semibold tracking-tight",
+        "body_lg": "text-lg md:text-xl leading-relaxed text-slate-600",
+        "body": "text-base leading-relaxed text-slate-600",
+        "caption": "text-sm font-medium tracking-wide uppercase text-slate-500"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "main": "#8B5CF6",
+          "light": "#A78BFA",
+          "dark": "#7C3AED",
+          "gradient": "bg-gradient-to-r from-violet-600 to-indigo-600"
+        },
+        "secondary": {
+          "main": "#6366F1",
+          "light": "#818CF8",
+          "dark": "#4F46E5"
+        },
+        "background": {
+          "main": "#FAFAFA",
+          "card": "#FFFFFF",
+          "subtle": "#F5F5F7",
+          "glass": "rgba(255, 255, 255, 0.7)"
+        },
+        "text": {
+          "primary": "#1E293B",
+          "secondary": "#64748B",
+          "muted": "#94A3B8",
+          "inverted": "#FFFFFF"
+        },
+        "status": {
+          "success": "#10B981",
+          "warning": "#F59E0B",
+          "error": "#EF4444",
+          "info": "#3B82F6"
+        }
+      },
+      "gradients": {
+        "brand": "bg-gradient-to-br from-violet-600 via-indigo-600 to-blue-600",
+        "brand_text": "bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600",
+        "surface_sheen": "bg-gradient-to-br from-white/80 to-white/40",
+        "glow": "bg-violet-500/20 blur-3xl"
+      }
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "spacing": {
+        "section_py": "py-24 md:py-32",
+        "element_gap": "gap-6 md:gap-8"
+      },
+      "radius": {
+        "default": "rounded-xl",
+        "card": "rounded-2xl",
+        "button": "rounded-full",
+        "input": "rounded-lg"
+      },
+      "shadows": {
+        "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+        "card_hover": "shadow-[0_20px_40px_rgb(139,92,246,0.1)]",
+        "glass": "shadow-[0_8px_32px_rgba(31,38,135,0.07)]"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-gradient-to-r from-violet-600 to-indigo-600 text-white hover:opacity-90 transition-all shadow-lg shadow-violet-500/25 rounded-full px-8 py-3 font-semibold tracking-wide",
+        "secondary": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-sm rounded-full px-8 py-3 font-medium",
+        "ghost": "text-slate-600 hover:text-violet-600 hover:bg-violet-50 rounded-full px-6 py-2 font-medium transition-colors"
+      },
+      "cards": {
+        "base": "bg-white rounded-2xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgb(139,92,246,0.1)] hover:-translate-y-1",
+        "glass": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-glass rounded-2xl"
+      },
+      "inputs": {
+        "base": "bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-2 focus:ring-violet-500 focus:border-transparent block w-full p-3 transition-all placeholder:text-slate-400"
+      }
+    },
+    "motion": {
+      "library": "framer-motion",
+      "transitions": {
+        "default": { "type": "spring", "stiffness": 400, "damping": 30 },
+        "slow": { "duration": 0.8, "ease": [0.04, 0.62, 0.23, 0.98] }
+      },
+      "variants": {
+        "fadeInUp": {
+          "initial": { "opacity": 0, "y": 20 },
+          "animate": { "opacity": 1, "y": 0 }
+        },
+        "staggerContainer": {
+          "animate": { "transition": { "staggerChildren": 0.1 } }
+        }
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_bg": {
+          "url": "https://images.unsplash.com/photo-1706463267841-70aa1d625fdc?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Abstract violet glass shapes",
+          "usage": "Hero section background with overlay"
+        },
+        "feature_abstract": {
+          "url": "https://images.unsplash.com/photo-1647998971512-f0d123199efa?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Abstract bubbles",
+          "usage": "Feature section decorative element"
+        },
+        "designer_working": {
+          "url": "https://images.unsplash.com/photo-1760278041741-085d84aae77b?crop=entropy&cs=srgb&fm=jpg&q=85",
+          "alt": "Designer working at desk",
+          "usage": "About section or 'For Designers' card"
+        },
+        "team": [
+          {
+            "url": "https://images.unsplash.com/photo-1652772589253-c1ab2308fbf4?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Team member female smiling"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1658909835269-e76abd3ffb5d?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Team member male on phone"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1562337404-3044c84ac061?crop=entropy&cs=srgb&fm=jpg&q=85",
+            "alt": "Team member female creative"
+          }
+        ]
+      },
+      "icons": "lucide-react"
+    },
+    "universal_guidelines": [
+      "DO NOT use generic centered layouts. Use asymmetry and bento grids.",
+      "DO NOT use dark mode. This is a strict LIGHT THEME application.",
+      "Use 'Outfit' font for all headings to give that premium designer feel.",
+      "Use 'Plus Jakarta Sans' for body text for maximum readability.",
+      "All cards must have 'rounded-2xl' and subtle borders.",
+      "Primary buttons must use the violet-indigo gradient.",
+      "Use 'framer-motion' for all interactions (hover lifts, page transitions).",
+      "Ensure all interactive elements have 'data-testid' attributes.",
+      "Use 'sonner' for toast notifications.",
+      "Never use pure black (#000000). Use Slate-900 (#0f172a) instead.",
+      "Add generous padding (py-24, py-32) to sections. Don't cram content.",
+      "Use glassmorphism (backdrop-blur-xl) for sticky headers and overlays."
+    ],
+    "instructions_to_main_agent": "You are building the frontend for DEZX. Follow these guidelines strictly. Start by setting up the font imports in index.css. Then build the layout wrapper. Use the provided image URLs for the landing page. Implement the 'Bento Grid' layout for the features section. Ensure the 'Violet Gradient' is used for primary actions and branding elements. Do not ask clarifying questions. Assume the persona of a top-tier product designer."
+  }
+}
