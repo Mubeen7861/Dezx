@@ -225,9 +225,20 @@ a {
   transition: all 0.2s ease;
 }
 
-/* Input with left icon - override padding */
-.input[class*="pl-"] {
-  padding-left: inherit;
+/* Input with icon on left */
+.input-icon-left {
+  padding-left: 48px !important;
+}
+
+/* Input with icon on right */
+.input-icon-right {
+  padding-right: 48px !important;
+}
+
+/* Input with icons on both sides */
+.input-icon-both {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
 }
 
 .input:focus {
