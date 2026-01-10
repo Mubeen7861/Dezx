@@ -32,8 +32,8 @@ from models.submission import Submission, SubmissionCreate, SubmissionUpdate
 from utils.auth import hash_password, verify_password, create_token, verify_token, get_current_user, require_role
 from utils.upload import save_upload, delete_upload
 
-# Create the main app
-app = FastAPI(title="DEZX API", version="1.0.0")
+# Create the main app - disable redirect_slashes to avoid 307 redirects
+app = FastAPI(title="DEZX API", version="1.0.0", redirect_slashes=False)
 
 # Create routers
 api_router = APIRouter(prefix="/api")
