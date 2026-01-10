@@ -76,7 +76,7 @@ const LoginPage = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="input pl-12"
+                  className="input input-icon-left"
                   placeholder="you@example.com"
                   data-testid="login-email"
                 />
@@ -91,7 +91,7 @@ const LoginPage = () => {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="input pl-12 pr-12"
+                  className="input input-icon-both"
                   placeholder="Enter your password"
                   data-testid="login-password"
                 />
