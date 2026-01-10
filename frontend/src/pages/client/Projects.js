@@ -741,7 +741,7 @@ export const ProjectDetail = () => {
                 <p className="font-medium text-amber-800 mb-2">What happens next:</p>
                 <ul className="text-amber-700 space-y-1">
                   <li>• All other proposals will be automatically rejected</li>
-                  <li>• The project status will change to "In Progress"</li>
+                  <li>• The project status will change to &quot;In Progress&quot;</li>
                   <li>• The designer will be notified of your selection</li>
                 </ul>
               </div>
