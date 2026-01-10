@@ -337,7 +337,7 @@ const ProjectDetailPage = () => {
                                   type="number"
                                   value={proposedBudget}
                                   onChange={(e) => setProposedBudget(e.target.value)}
-                                  className="input pl-9"
+                                  className="input input-icon-left-sm"
                                   placeholder="1500"
                                   data-testid="proposal-budget"
                                 />
@@ -351,7 +351,7 @@ const ProjectDetailPage = () => {
                                   type="text"
                                   value={estimatedDuration}
                                   onChange={(e) => setEstimatedDuration(e.target.value)}
-                                  className="input pl-9"
+                                  className="input input-icon-left-sm"
                                   placeholder="2 weeks"
                                   data-testid="proposal-duration"
                                 />
