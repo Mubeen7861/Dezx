@@ -215,10 +215,7 @@ a {
 /* Input styles */
 .input {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 12px 16px;
   background: var(--background-subtle);
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -226,6 +223,11 @@ a {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--text-primary);
   transition: all 0.2s ease;
+}
+
+/* Input with left icon - override padding */
+.input[class*="pl-"] {
+  padding-left: inherit;
 }
 
 .input:focus {
