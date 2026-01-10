@@ -230,6 +230,11 @@ a {
   padding-left: 48px !important;
 }
 
+/* Input with smaller icon on left (for smaller inputs) */
+.input-icon-left-sm {
+  padding-left: 36px !important;
+}
+
 /* Input with icon on right */
 .input-icon-right {
   padding-right: 48px !important;
