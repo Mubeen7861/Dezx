@@ -1155,6 +1155,11 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
 
+@app.get("/")
+def home():
+    return {"status": "ok", "message": "Dezx API running"}
+
+
 
 # CORS
 app.add_middleware(
