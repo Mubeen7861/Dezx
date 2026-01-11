@@ -1141,8 +1141,20 @@ api_router.include_router(audit_router)
 
 app.include_router(api_router)
 
-# Mount static files
-app.mount("/uploads", StaticFiles(directory="/app/uploads"), name="uploads")
+from utils.upload import UPLOAD_DIR
+from fastapi.staticfiles import StaticFiles
+
+# Ensure dir exists
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+# Mount static uploads
+from utils.upload import UPLOAD_DIR
+
+# ensure upload dir exists
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+app.mount("/uploads", StaticFiles(directory=str(UPLOAD_DIR)), name="uploads")
+
 
 # CORS
 app.add_middleware(
