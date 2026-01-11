@@ -4,9 +4,14 @@ import aiofiles
 from pathlib import Path
 from fastapi import UploadFile, HTTPException
 
+import os
+
 # Upload directory
-UPLOAD_DIR = Path("/app/uploads")
+# Render/Vercel/etc: use /tmp which is writable
+# Local: default to ./uploads
+UPLOAD_DIR = Path(os.getenv("UPLOAD_DIR", "uploads"))
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
 
 # Allowed file types
 ALLOWED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.pdf', '.doc', '.docx', '.zip'}
