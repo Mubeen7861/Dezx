@@ -346,14 +346,23 @@ const LandingPage = () => {
                   )}
                 </button>
                 {expandedFaq === i && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="px-6 pb-5"
-                  >
-                    <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
-                  </motion.div>
+{expandedFaq === i && (
+  <motion.div
+    initial={{ opacity: 0, scaleY: 0 }}
+    animate={{ opacity: 1, scaleY: 1 }}
+    exit={{ opacity: 0, scaleY: 0 }}
+    transition={{ duration: 0.25 }}
+    style={{ transformOrigin: "top" }}
+    className="overflow-hidden"
+  >
+    <div className="px-6 pb-5">
+      <p className="pt-2 text-slate-600 leading-relaxed">
+        {faq.answer}
+      </p>
+    </div>
+  </motion.div>
+)}
+
                 )}
               </motion.div>
             ))}
