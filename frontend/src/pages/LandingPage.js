@@ -346,7 +346,6 @@ const LandingPage = () => {
                   )}
                 </button>
                 {expandedFaq === i && (
-{expandedFaq === i && (
   <motion.div
     initial={{ opacity: 0, scaleY: 0 }}
     animate={{ opacity: 1, scaleY: 1 }}
@@ -362,8 +361,6 @@ const LandingPage = () => {
     </div>
   </motion.div>
 )}
-
-                )}
               </motion.div>
             ))}
           </div>
